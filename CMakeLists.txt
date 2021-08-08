@@ -211,3 +211,7 @@ add_dependencies(arm_mover simple_arm_generate_messages_cpp)
 add_executable(look_away src/look_away.cpp)
 target_link_libraries(look_away ${catkin_LIBRARIES})
 add_dependencies(look_away simple_arm_generate_messages_cpp)
+
+add_executable(look_away_publish_subscribe src/look_away_publish_subscribe.cpp)
+target_link_libraries(look_away_publish_subscribe ${catkin_LIBRARIES})
+add_dependencies(look_away_publish_subscribe simple_arm_generate_messages_cpp)
